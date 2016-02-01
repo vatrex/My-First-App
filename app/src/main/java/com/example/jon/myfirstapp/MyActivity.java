@@ -20,7 +20,7 @@ public class MyActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText editText = (EditText) findViewById(R.id.edit_message);
         String message = editText.getText().toString();
-        if(message.equals("a"))
+        if(message.equals("hello"))
             counter++;
         intent.putExtra(EXTRA_MESSAGE, message);
         intent.putExtra(COUNTER, counter);
